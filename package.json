@@ -11,6 +11,8 @@
     "@types/express": "4.16.0",
     "jenkins": "0.22.1",
     "express": "4.16.3",
+    "request": "2.88.0",
+    "request-promise-native": "1.0.5",
     "dialogflow": "0.6.0"
   },
   "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
