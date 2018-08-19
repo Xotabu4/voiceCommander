@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT, () => console.log('Example app listening on port: ' + process.env.PORT))
 
 // const creds = require('./creds/actionstest.json')
 // // Instantiate a DialogFlow client. It uses ENV var - GOOGLE_APPLICATION_CREDENTIALS
