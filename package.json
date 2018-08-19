@@ -1,0 +1,17 @@
+{
+  "name": "voicecommander",
+  "version": "1.0.0",
+  "description": "Package to control your development process with google assistant",
+  "main": "index.js",
+  "scripts": {
+    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/Documents/GitHub/voiceCommander/creds/actionstest.json\" node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jenkins": "0.22.1",
+    "express": "4.16.3",
+    "dialogflow": "0.6.0"
+  },
+  "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
+  "license": "MIT"
+}
