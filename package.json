@@ -2,15 +2,20 @@
   "name": "voicecommander",
   "version": "1.0.0",
   "description": "Package to control your development process with google assistant",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "start": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/Documents/GitHub/voiceCommander/creds/actionstest.json\" node index.js",
+    "start": "node lib/index.js",
+    "push": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/TEST_GCREDS.json\" node lib/push.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@types/express": "4.16.0",
+    "@types/request": "2.47.1",
+    "actions-on-google": "2.3.0",
+    "googleapis": "32.0.0",
     "jenkins": "0.22.1",
     "express": "4.16.3",
+    "body-parser": "1.18.3",
     "request": "2.88.0",
     "request-promise-native": "1.0.5",
     "dialogflow": "0.6.0"
