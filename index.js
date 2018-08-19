@@ -7,7 +7,8 @@ app.get('/', (req, res) => {
     console.log(req.headers)
     console.log('===BODY===')
     console.log(req.body)
-    res.send('Hello World!')
+    res.send({ fulfillmentText: 'This is text response from server!' })
+
 })
 
 app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port: ' + process.env.PORT))
