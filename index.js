@@ -1,14 +1,13 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => {
+app.post('/', (req, res) => {
     console.log('===INCOMMING REQUEST===')
     console.log('===HEADERS===')
     console.log(req.headers)
     console.log('===BODY===')
     console.log(req.body)
     res.send({ fulfillmentText: 'This is text response from server!' })
-
 })
 
 app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port: ' + process.env.PORT))
