@@ -2,11 +2,15 @@ const express = require('express')
 const app = express()
 
 app.get('/', (req, res) => {
-    console.log(JSON.stringify(req, null, 2))
+    console.log('===INCOMMING REQUEST===')
+    console.log('===HEADERS===')
+    console.log(req.headers)
+    console.log('===BODY===')
+    console.log(req.body)
     res.send('Hello World!')
 })
 
-app.listen(process.env.PORT, () => console.log('Example app listening on port: ' + process.env.PORT))
+app.listen(process.env.PORT || 3000, () => console.log('Example app listening on port: ' + process.env.PORT))
 
 // const creds = require('./creds/actionstest.json')
 // // Instantiate a DialogFlow client. It uses ENV var - GOOGLE_APPLICATION_CREDENTIALS
