@@ -4,6 +4,7 @@
   "description": "Package to control your development process with google assistant",
   "main": "lib/index.js",
   "scripts": {
+    "postinstall": "sed -i -e 's/getaddrinfo()/getaddrinfo({families\\:\\[4\\]\\})/g' node_modules/mdns/lib/browser.js",
     "start": "node lib/index.js",
     "start-forever": "forever -l log.log -o log.log -e log.log ./lib/index.js",
     "stop": "forever stopall",
