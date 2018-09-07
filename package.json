@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
+    "start-forever": "forever -l log.log -o log.log -e log.log ./lib/index.js",
+    "stop": "forever stopall",
     "push": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/TEST_GCREDS.json\" node lib/push.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,7 +21,8 @@
     "request": "2.88.0",
     "request-promise-native": "1.0.5",
     "dialogflow": "0.6.0",
-    "google-home-notifier": "1.2.0"
+    "google-home-notifier": "1.2.0",
+    "forever": "0.15.3"
   },
   "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
   "license": "MIT"
