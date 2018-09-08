@@ -25,7 +25,7 @@
     "forever": "0.15.3"
   },
   "optionalDependencies": {
-    "google-home-notifier": "1.2.0",
+    "google-home-notifier": "1.2.0"
   },
   "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
   "license": "MIT"
