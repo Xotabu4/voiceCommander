@@ -22,7 +22,8 @@
     "request": "2.88.0",
     "request-promise-native": "1.0.5",
     "dialogflow": "0.6.0",
-    "forever": "0.15.3"
+    "forever": "0.15.3",
+    "greenlock-express": "2.4.6"
   },
   "optionalDependencies": {
     "google-home-notifier": "1.2.0"
