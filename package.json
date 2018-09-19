@@ -4,12 +4,11 @@
   "description": "Package to control your development process with google assistant",
   "main": "lib/index.js",
   "scripts": {
-    "dns": "sed -i -e 's/getaddrinfo()/getaddrinfo({families\\:\\[4\\]\\})/g' node_modules/mdns/lib/browser.js",
-    "start": "node lib/index.js",
+    "start-webhook": "node lib/index.js",
+    "start-notifications-pusher": "node lib/notifications_pusher.js",
     "start-forever": "forever -l log.log -o log.log -e log.log ./lib/index.js",
     "stop": "forever stopall",
-    "push": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/TEST_GCREDS.json\" node lib/push.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "push": "GOOGLE_APPLICATION_CREDENTIALS=\"/Users/oleksandrkhotemskyi/TEST_GCREDS.json\" node lib/push.js"
   },
   "dependencies": {
     "@types/express": "4.16.0",
@@ -25,7 +24,7 @@
     "forever": "0.15.3"
   },
   "optionalDependencies": {
-    "google-home-notifier": "1.2.0"
+    "google-home-notifier": "noelportugal/google-home-notifier"
   },
   "author": "Oleksandr Khotemskyi <xotabu4@gmail.com>",
   "license": "MIT"
